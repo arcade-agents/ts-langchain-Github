@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['Github_AssignPullRequestUser', 'Github_CreateBranch', 'Github_CreateFile', 'Github_CreateIssue', 'Github_CreatePullRequest', 'Github_CreateReviewComment', 'Github_ManageLabels', 'Github_ManagePullRequestReviewers', 'Github_MergePullRequest', 'Github_ResolveReviewThread', 'Github_SubmitPullRequestReview', 'Github_UpdateFileLines', 'Github_UpdateIssue', 'Github_UpdatePullRequest'];
+const TOOLS_WITH_APPROVAL = ['Github_AssignPullRequestUser', 'Github_CreateBranch', 'Github_CreateFile', 'Github_CreateIssue', 'Github_CreateIssueComment', 'Github_CreatePullRequest', 'Github_CreateReplyForReviewComment', 'Github_CreateReviewComment', 'Github_ManageLabels', 'Github_ManagePullRequestReviewers', 'Github_MergePullRequest', 'Github_ResolveReviewThread', 'Github_SetStarred', 'Github_SubmitPullRequestReview', 'Github_UpdateFileLines', 'Github_UpdateIssue', 'Github_UpdatePullRequest'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
